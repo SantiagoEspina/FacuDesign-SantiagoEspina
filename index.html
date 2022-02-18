@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Facu Design</title>
 
@@ -19,20 +24,38 @@
 <body>
     <!-- Inicio Header -->
     <header>
-        <!-- Menu de navegación -->
-        <nav class="navbar">
-            <a href="#inicio" class="logo-container">
-                <!-- Este es el logo -->
-                <img src="images/FacuDesign.png" alt="Logo de Facu Design Diseño Grafico" class="logo"> 
-            </a>
-            <ul class="unorderlist">
-                <li class="list"><a href="#inicio" class="iniciolink">INICIO</a></li>
-                <li class="list"><a href="#sobremi" class="sobremilink">SOBRE MI</a></li>
-                <li class="list"><a href="#servicios" class="servicioslink">SERVICIOS</a></li>
-                <li class="list"><a href="#portafolio" class="portafoliolink">PORTAFOLIO</a></li>
-                <li class="list"><a href="#contacto" class="contactolink">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <a href="#inicio">
+            <img src="images/FacuDesign.png" alt="Logo" class="logo">
+        </a> 
+        <!-- Menu de navegación - Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">   
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobremi">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Serivicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- Final Header -->
     <!-- Inicio Carrusel/ Seccion Inicio -->
@@ -73,21 +96,36 @@
     <!-- Final Servicios -->
     <!-- Inicio Portafolio -->
     <section id="portafolio" class="portafolio">
-
         <h2 class="portafolio-title">Portafolio</h2>
-        
-        <div class="grid-portafolio">
-            <!-- Imagenes para mostrar en el portafolio -->
-                <img src="images/TallerDeSabores.png" alt="Taller De Sabores, Café Bar" class="porta-image1">
-                <img src="images/VirgenDelCarmen.png" alt="Virgen Del Carmen, Comida Para Llevar, Asador de Pollos" class="porta-image2">
-                <img src="images/CartasDeFifa.png" alt="Cartas De Fifa Personalizada" class="porta-image3">
-                 <img src="images/JuismaTaller.png" alt="Taller Juisma" class="porta-image4">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/TallerDeSabores.png" alt="Taller De Sabores, Café Bar" class="porta-image1">
+                </div>
+                <div class="col-3">
+                    <img src="images/VirgenDelCarmen.png" alt="Virgen Del Carmen, Comida Para Llevar, Asador de Pollos" class="porta-image2">
+                </div>
+                <div class="col-3">
+                    <img src="images/CartasDeFifa.png" alt="Cartas De Fifa Personalizada" class="porta-image3">
+                </div>
+                <div class="col-3">
+                    <img src="images/JuismaTaller.png" alt="Taller Juisma" class="porta-image4">
+                </div>
+            <div class="row">
+              <div class="col-3">
                 <p class="porta-text1">Taller De Sabores.</p>
-                 <p class="porta-text2">Virgen Del Carmen.</p>
-                 <p class="porta-text3">Carta De Fifa</p>
-                 <p class="porta-text4">Juisma Taller</p>
+              </div>
+              <div class="col-3">
+                <p class="porta-text2">Virgen Del Carmen.</p>
+              </div>
+              <div class="col-3">
+                <p class="porta-text3">Carta De Fifa</p>
+              </div>
+              <div class="col-3">
+                <p class="porta-text4">Juisma Taller</p>
+              </div>
+            </div>
         </div>
-
     </section>
     <!-- Final Portafolio -->
     <!-- Inicio Contacto -->
@@ -110,5 +148,8 @@
     </footer>
     <!-- Final Footer -->
     
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
