@@ -17,7 +17,7 @@ header, nav {
     justify-content: center;
     position: fixed;
     width: 100%;
-    margin-bottom: 10px;
+    z-index: 1;
 }
 
 header {
@@ -55,7 +55,6 @@ header nav div div ul li a {
     color: black;
     font-size: 25px;
     text-align: center;
-    margin-bottom: 10px;
     font-weight: bold;
 }
 /* Fin Header */
@@ -70,6 +69,12 @@ header nav div div ul li a {
     width: 500px;
     display: inline;
     margin-top: 75px;
+}
+
+@media screen and (max-width: 510px) {
+    .Carrusel1,.Carrusel2,.Carrusel3 {
+        width: 250px;
+    }
 }
 
 .title{
@@ -118,6 +123,7 @@ header nav div div ul li a {
     font-size: 25px;
     text-align: center;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .about-me-container {
@@ -146,6 +152,7 @@ header nav div div ul li a {
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -155,6 +162,9 @@ header nav div div ul li a {
     .designer-info {
         justify-content: center;
         margin-bottom: 20px;
+    }
+    .designer-photo {
+        margin-left: 10%;
     }
 }
 
@@ -178,6 +188,7 @@ header nav div div ul li a {
     color: black;
     font-size: 25px;
     text-align: center;
+    font-weight: bold;
 }
 
 
@@ -214,6 +225,11 @@ header nav div div ul li a {
     }
 }
 
+.services-container .container div div {
+    display: flex ;
+    justify-content: center;
+}
+
 /* Fin Serivicios */
 /* ---------- */
 /* Inicio Portafolio */
@@ -229,116 +245,36 @@ header nav div div ul li a {
     font-size: 25px;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.porta-image1, .porta-image2, .porta-image3, .porta-image4 {
-    width: 300px;
-    height: 300px;
-    border: 2px solid #3d3d3d;
-    border-radius: 8px;
-    margin-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
+/* Texto Carrusel */
 
-.big-grid-porta-cointaner {
-    display: none;
-}
-
-.porta-text1, .porta-text2, .porta-text3, .porta-text4 {
+.porta-carrusel-title1, .porta-carrusel-title2, .porta-carrusel-title3 {
     font-family: 'Roboto Condensed', sans-serif;
-    color: black;
-    font-size: 15px;
-    margin-bottom: 10px;
-    margin-left: 35%;
-    flex-wrap: none;
+    color: #ffffff;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    
 } 
 
-.services-container .container div div {
-    display: flex ;
-    justify-content: center;
+.porta-carrusel-subtitle1, .porta-carrusel-subtitle2, .porta-carrusel-subtitle3{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
 }
+
+.carousel-border {
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
 
 /* Animaciones portafolio*/
-
-.porta-image1:hover{ 
-    transform: scale(1.12);
-    margin-bottom: 15px;
-    transition: ease-in-out 0.2s;
-}
-
-.porta-image2:hover{ 
-    transform: scale(1.12);
-    margin-bottom: 15px;
-    transition: ease-in-out 0.2s;
-}
-
-.porta-image3:hover{ 
-    transform: scale(1.12);
-    margin-bottom: 15px;
-    transition: ease-in-out 0.2s;
-}
-
-.porta-image4:hover{ 
-    transform: scale(1.12);
-    margin-bottom: 15px;
-    transition: ease-in-out 0.2s;
-}
-
-/* Fin animaciones portafolio */
-
-.porta-text1, .porta-text2, .porta-text3, .porta-text4 {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: black;
-    font-size: 20px;
-}
-
-@media screen and (max-width: 1430px)
-{
-    .porta-image1, .porta-image2, .porta-image3, .porta-image4 {
-        width: 250px;
-        height: 250px;
-        }
-        .porta-text1, .porta-text2, .porta-text3, .porta-text4 {
-            font-size: 17px;
-        }
-}
-@media screen and (max-width: 1200px)
-{
-    .porta-image1, .porta-image2, .porta-image3, .porta-image4 {
-        width: 175px;
-        height: 175px;
-        }
-        .porta-text1, .porta-text2, .porta-text3, .porta-text4 {
-            font-size: 14px;
-        }
-}
-
-@media screen and (max-width: 890px)
-{
-    .porta-image1, .porta-image2, .porta-image3, .porta-image4 {
-        width: 125px;
-        height: 125px;
-        }
-
-        .porta-text1, .porta-text2, .porta-text3, .porta-text4 {
-            font-size: 12px;
-        }
-}
-
-@media screen and (max-width: 700px)
-{
-    .porta-image1, .porta-image2, .porta-image3, .porta-image4 {
-        width: 75px;
-        height: 75px;
-        }
-
-        .porta-text1, .porta-text2, .porta-text3, .porta-text4 {
-            font-size: 9px;
-        }
-}
-
-
 
 /* Fin Portafolio */
 /* ---------- */
@@ -354,6 +290,7 @@ header nav div div ul li a {
     color: black;
     font-size: 25px;
     text-align: center;
+    font-weight: bold;
 }
 
 .contact-text{
