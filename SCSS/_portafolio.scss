@@ -1,0 +1,39 @@
+.portafolio {
+    background-color: #cfcfcf;
+    border: 2px solid #b1b1b1;
+
+    .portafolio-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    }
+
+/* Texto Carrusel */
+
+    .porta-carrusel-title1, .porta-carrusel-title2, .porta-carrusel-title3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    
+    } 
+
+    .porta-carrusel-subtitle1, .porta-carrusel-subtitle2, .porta-carrusel-subtitle3{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    }
+
+    .carousel-border {
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    }
+
+}
