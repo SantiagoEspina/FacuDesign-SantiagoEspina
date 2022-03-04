@@ -1,13 +1,8 @@
 .contact {
-    border-top: 2px solid #4e4e4e;
-    background-color: #a1a1a1;
+    @extend %contact-bg-b;
 
     .contact-title{
-        font-family: 'Roboto Condensed', sans-serif;
-        color: black;
-        font-size: 25px;
-        text-align: center;
-        font-weight: bold;
+         @extend %titulos;
     }
     
     .contact-text{

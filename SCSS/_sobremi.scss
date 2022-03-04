@@ -1,15 +1,9 @@
 .about-me-container {
     margin-top: 10px;
-    background-color: #cfcfcf;
-    border: 2px solid #b1b1b1;
+    @extend %background-and-border;
 
     .title-about-me {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: black;
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 10px;
-        font-weight: bold;
+        @extend %titulos;
     }
     
     .about-me-container {
@@ -25,11 +19,7 @@
     }
     
     .designer-photo {
-        width: 80%;
-        margin-left: 50px;
-        margin-bottom: 20px;
-        border: 2px solid #727272;
-        border-radius: 25px;
+        @include images(90%, 50px, 20px, 0, 25px);
     }
     
     .designer-info {

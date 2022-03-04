@@ -5,16 +5,33 @@
     box-sizing: border-box;
 }
 
+// Header
 @import 'header';
 
+// Inicio
 @import 'inicio';
 
+// Sobre Mi
 @import 'sobremi';
+
+// Servicios
 
 @import 'services';
 
+// Portafolio
 @import 'portafolio';
 
+// Contacto
 @import 'contact';
 
+// Footer
 @import 'footer';
+
+// Extend
+@import 'extend';
+
+// Maps
+@import 'maps';
+
+// Mixin
+@import 'mixin';

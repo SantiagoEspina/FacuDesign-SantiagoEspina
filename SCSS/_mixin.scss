@@ -1,0 +1,8 @@
+
+@mixin images( $tamaño, $margin-abajo, $margin-izquierdo, $borde, $borde-radius) {
+    width: &tamaño;
+    margin-bottom: $margin-abajo;
+    margin-left: $margin-izquierdo;
+    border: $borde;
+    border-radius: $borde-radius;
+}

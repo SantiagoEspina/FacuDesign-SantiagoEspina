@@ -1,14 +1,8 @@
 .portafolio {
-    background-color: #cfcfcf;
-    border: 2px solid #b1b1b1;
+    @extend %background-and-border;
 
     .portafolio-title{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: black;
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
+        @extend %titulos;
     }
 
 /* Texto Carrusel */
