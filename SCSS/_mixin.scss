@@ -1,8 +1,12 @@
 
-@mixin images( $tamaño, $margin-abajo, $margin-izquierdo, $borde, $borde-radius) {
-    width: &tamaño;
+@mixin images( $size, $margin-abajo, $margin-izquierdo, $borde, $borde-radius) {
+    width: $size;
     margin-bottom: $margin-abajo;
     margin-left: $margin-izquierdo;
     border: $borde;
     border-radius: $borde-radius;
+}
+
+.designer-photo {
+    @include images(20%, 50px, 20px, 0, 25px);
 }

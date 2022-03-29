@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+// Mixin
+@import 'mixin';
+
+// Extend
+@import 'extend';
+
+// Maps
+@import 'maps';
+
 // Header
 @import 'header';
 
@@ -26,12 +35,3 @@
 
 // Footer
 @import 'footer';
-
-// Extend
-@import 'extend';
-
-// Maps
-@import 'maps';
-
-// Mixin
-@import 'mixin';
