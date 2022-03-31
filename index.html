@@ -32,8 +32,8 @@
 <body>
     <!-- Inicio Header -->
     <header>
-        <a href="#inicio">
-            <img src="images/FacuDesign.png" alt="Logo" class="logo">
+        <a href="index.html">
+            <img src="images/FacuDesigna-Logo.png" alt="Logo" class="logo">
         </a> 
         <!-- Menu de navegación - Bootstrap -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">   
@@ -58,7 +58,7 @@
                     <a class="nav-link" href="#portafolio">Portafolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link contact-button" href="#contacto">  Contacto  </a>
                   </li>
                 </ul>
               </div>
@@ -69,13 +69,20 @@
     <!-- Inicio Carrusel/ Seccion Inicio -->
     <section id="inicio" class="inicio">
         <!-- Imagenes del carrusel -->
-        <img src="images/Carrusel1.jpg" alt="Imagen del carrusel 1" class="Carrusel1">
-        <img src="images/Carrusel2.jpg" alt="Imagen del carrusel 2" class="Carrusel2">
-        <img src="images/Carrusel3.jpg" alt="Imagen del carrusel 3" class="Carrusel3">
-        <div>   
-            <h1 class="title">Facu Design <br>Diseño Grafico</h1>
-            <a href="#contacto" class="contact-button">CONTACTO</a>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active Carrusel1">
+              <img src="images/Carrusel1.jpg" class="d-block w-100" alt="Imagen del carrusel 1" >
+            </div>
+            <div class="carousel-item Carrusel2">
+              <img src="images/Carrusel2.jpg" class="d-block w-100" alt="Imagen del carrusel 2" >
+            </div>
+            <div class="carousel-item Carrusel3">
+              <img src="images/Carrusel3.jpg" class="d-block w-100" alt="Imagen del carrusel 3">
+            </div>
+          </div>
         </div>
+
     </section>
     <!-- Final Carrusel/Inicio -->
     <!-- Inicio Sobre Mi -->
@@ -83,9 +90,18 @@
         <h2 class="title-about-me">Sobre Mi</h2>
         <div class="grid-about-me">
         <!-- Imagen del Diseñador Grafico -->
-            <img src="images/FacuEspina.png" alt="Facundo Espina Diseñador Grafico" class="designer-photo">
+            <img src="images/FacuEspina.jpg" alt="Facundo Espina Diseñador Grafico" class="designer-photo">
         <!-- Informacion -->
-            <p class="designer-info">Aca va información del diseñador.</p>
+            <p class="designer-info">!Hola gente!,<br> Soy Facundo Espina, argentino, actualmente residiendo en Almeria, España. 
+            <br> 
+            Tecnico Superior en Diseño Grafico y Publicitario.
+            <br>
+            Con mas de 8 años de experiencia en este rubro.
+            <br>
+            Elijo dia a dia ésta hermosa profesión de tener la capacidad de crear logos, identidad corporativa, vinilos, carteleria, diseños para redes desde el diseño comunicacional hasta el montaje y ver el resultado final, es lo mas satisfactorio de éste estilo de vida.
+            <br>
+            Espero que les guste mis trabajos y se animen a ser parte de esta experiencia.
+          </p>
         </div>
     </section>
     <!-- Final Sobre Mi -->
@@ -94,11 +110,11 @@
         <h2 class="title-services">Servicios</h2>
         <div class="services-grid-container">
          <img src="images/Logos.png" alt="Logos personalizado para tu negocio" class="service-image1"> 
-         <p class="logos-text">Logos: Aqui va la información de logos</p>
+         <p class="logos-text">Logos y Carteleria</p>
             <img src="images/Portadas.png" alt="Portadas  personalizadas para tu negocio" class="service-image2">
-            <p class="front-text">Portadas: Aqui va la información de las portadas</p>
+            <p class="front-text">Vinilo</p>
             <img src="images/Carteles.png" alt="Carteles  personalizados para tu negocio" class="service-image3">
-            <p class="signs-text">Carteles: Aqui va la información de carteles</p>
+            <p class="signs-text">Identidad Visual Corporativa</p>
         </div>
     </section>
     <!-- Final Servicios -->
@@ -106,8 +122,9 @@
     <section id="portafolio" class="portafolio">
         <h2 class="portafolio-title">Portafolio</h2>
 
-     <div class="container">
-       <div class="row justify-content-md-center">
+      <!-- Inicio Carrusel Portafolio -->
+      <div class="container">
+       <div class="row justify-content-md-center carrusel-portafolio" >
        <div class="col-8">
         <div id="carouselExampleDark" class="carousel carousel-dark slide carrusel-container" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -131,7 +148,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="images/CartasDeFifa.png" class="d-block w-100 porta-image3" alt="Carta de fifa personalizada">
+              <img src="images/CartasDeFifa.jpg" class="d-block w-100 porta-image3" alt="Carta de fifa personalizada">
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="porta-carrusel-title3">Carta Personalizada de Fifa</h5>
                 <p class="porta-carrusel-subtitle3">Tu propia carta del videojuego Fifa</p>
@@ -147,6 +164,7 @@
           </button>
         </div>
       </div>
+      <!-- Fin Carrusel Portafolio -->
     </section>
     <!-- Final Portafolio -->
     <!-- Inicio Contacto -->
@@ -154,12 +172,12 @@
         <h2 class="contact-title">Contacto</h2>
         <p class="contact-text">Hablame del diseño que te gustaria para tu proyecto, estare encantado de ayudarte para que tu proyecto tenga una buena imagen</p>
         <!-- Numero de telefono -->
-        <p class="phone-number">+12 34567891</p>
+        <p class="phone-number"><img src="images/phonecall.png" alt="Numero de telefono" class="phone-image">+34 722 78 81 84</p>
         <!-- Correo Electronico -->
-        <p class="e-mail">lorem@gmail.com</p>
+        <p class="e-mail"><img src="images/email.png" alt="Correo Electronico" class="email-image">facundodisenos@hotmail.com</p>
         <!-- Redes sociales -->
-        <a href="https://www.instagram.com/instagramdeejemplo" target="_blank"><img src="images/instagram.png" alt="Instagram de Diseñador Grafico Facundo Espina" class="instagram-image"></a>
-        <a href="https://www.facebook.com/facebookdeejemplo" target="_blank"><img src="images/facebook.png" alt="Facebook de Diseñador Grafico Facundo Espina" class="facebook-image"></a>
+        <a href="https://instagram.com/facudesignok?utm_medium=copy_link" target="_blank"><img src="images/instagram.png" alt="Instagram de Diseñador Grafico Facundo Espina" class="instagram-image"></a>
+        <a href="https://es-la.facebook.com/facundoespinaboca" target="_blank"><img src="images/facebook.png" alt="Facebook de Diseñador Grafico Facundo Espina" class="facebook-image"></a>
         <a href="https://wwww.twitter.com/twitterdeejemplo" target="_blank"><img src="images/twitter.png" alt="Twitter de Diseñador Grafico Facundo Espina" class="twitter-image"></a>
     </section>
     <!-- Final Contacto -->
