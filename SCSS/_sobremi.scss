@@ -7,7 +7,6 @@
     }
     
     .about-me-container {
-        margin-top: 10px;
         background-color: #cfcfcf;
         border-top: 2px solid #a5a5a5;
     }
@@ -18,19 +17,31 @@
         column-gap: 50px;
     }
     
-    .designer-photo {
-        @include images(90%, 50px, 20px, 0, 25px);
-    }
+   .designer-photo {
+            width: 80%;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            border: 2px solid #727272;
+            border-radius: 25px;
+        };
+
     
     .designer-info {
         font-family: 'Roboto Condensed', sans-serif;
         color: black;
-        font-size: 20px;
+        font-size: 25px;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         text-align: center;
     }
     
+    @media screen and (max-width: 883px) {
+        .designer-info {
+            font-size: 20px;
+        }
+    }
+
     @media screen and (max-width: 700px) {
         .grid-about-me {
             grid-template-columns: 1fr;
@@ -44,4 +55,10 @@
         }
     }
     
+}
+
+@media screen and (max-width: 900px) {
+    .about-me-container {
+       padding-top: 60px;    
+    }
 }

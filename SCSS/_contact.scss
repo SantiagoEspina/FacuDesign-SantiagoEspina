@@ -31,10 +31,17 @@
     
     .instagram-image, .facebook-image, .twitter-image {
         width: 35px;
-        margin-left: 35px;
+        margin-right: 5px;
+        margin-left: 15px;
         margin-top: 15px;
         margin-bottom: 15px;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    .email-image, .phone-image {
+        width: 35px;
+        margin-right: 5px;
+        margin-left: 0px;
     }
 }

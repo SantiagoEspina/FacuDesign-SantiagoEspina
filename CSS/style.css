@@ -5,6 +5,25 @@
   box-sizing: border-box;
 }
 
+.contact .contact-title, .portafolio .portafolio-title, .services-container .title-services, .about-me-container .title-about-me {
+  font-family: "Roboto Condensed", sans-serif;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.portafolio, .about-me-container {
+  background-color: #cfcfcf;
+  border: 2px solid #b1b1b1;
+}
+
+.contact {
+  border-top: 2px solid #4e4e4e;
+  background-color: #a1a1a1;
+}
+
 header {
   background: linear-gradient(to right, #bebebe, #ececec);
   display: flex;
@@ -29,6 +48,18 @@ header nav div div ul li a {
   text-align: center;
   font-weight: bold;
 }
+header .contact-button {
+  background-color: #89DEA9;
+  border: 5px solid #89DEA9;
+  border-radius: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 10px;
+}
+header .contact-button:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}
 header .logo {
   width: 100px;
   margin-left: 5%;
@@ -46,23 +77,25 @@ header .logo-container {
   display: inline;
 }
 
-.inicio img {
-  width: 500px;
-  display: inline;
+.inicio .Carrusel1, .inicio .Carrusel2, .inicio .Carrusel3 {
+  width: 100%;
   margin-top: 75px;
 }
 @media screen and (max-width: 510px) {
-  .inicio img {
+  .inicio .Carrusel1, .inicio .Carrusel2, .inicio .Carrusel3 {
     width: 250px;
   }
 }
 .inicio div .title {
   font-family: "Roboto Condensed", sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
   font-size: 30px;
+  font-weight: bold;
   display: inline;
   position: absolute;
-  top: 350px;
-  left: 30px;
+  top: 50%;
+  left: 85px;
 }
 .inicio div .contact-button {
   font-family: "Roboto Condensed", sans-serif;
@@ -74,29 +107,23 @@ header .logo-container {
   border: 5px solid #89DEA9;
   border-radius: 13px;
   position: absolute;
-  top: 425px;
-  left: 30px;
+  top: 60%;
+  left: 85px;
 }
 .inicio div .contact-button:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
 }
 
+@media screen and (max-width: 900px) {
+  .inicio {
+    display: none;
+  }
+}
 .about-me-container {
   margin-top: 10px;
-  background-color: #cfcfcf;
-  border: 2px solid #b1b1b1;
-}
-.about-me-container .title-about-me {
-  font-family: "Roboto Condensed", sans-serif;
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: bold;
 }
 .about-me-container .about-me-container {
-  margin-top: 10px;
   background-color: #cfcfcf;
   border-top: 2px solid #a5a5a5;
 }
@@ -115,10 +142,16 @@ header .logo-container {
 .about-me-container .designer-info {
   font-family: "Roboto Condensed", sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   text-align: center;
+}
+@media screen and (max-width: 883px) {
+  .about-me-container .designer-info {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 700px) {
   .about-me-container .grid-about-me {
@@ -133,22 +166,20 @@ header .logo-container {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .about-me-container {
+    padding-top: 60px;
+  }
+}
 .services-container {
   padding-bottom: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 .services-container .services-grid-container {
   display: grid;
   grid-template-columns: 5% auto;
   row-gap: 30px;
   column-gap: 40px;
-}
-.services-container .title-services {
-  font-family: "Roboto Condensed", sans-serif;
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
 }
 .services-container .service-image1, .services-container .service-image2, .services-container .service-image3 {
   width: 100px;
@@ -160,7 +191,7 @@ header .logo-container {
   color: black;
   font-size: 30px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   margin-left: 20px;
 }
@@ -185,17 +216,11 @@ header .logo-container {
 }
 
 .portafolio {
-  background-color: #cfcfcf;
-  border: 2px solid #b1b1b1;
   /* Texto Carrusel */
 }
-.portafolio .portafolio-title {
-  font-family: "Roboto Condensed", sans-serif;
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: bold;
+.portafolio .carrusel-portafolio {
+  display: flex;
+  justify-content: center;
 }
 .portafolio .porta-carrusel-title1, .portafolio .porta-carrusel-title2, .portafolio .porta-carrusel-title3 {
   font-family: "Roboto Condensed", sans-serif;
@@ -217,17 +242,6 @@ header .logo-container {
   margin-bottom: 10px;
 }
 
-.contact {
-  border-top: 2px solid #4e4e4e;
-  background-color: #a1a1a1;
-}
-.contact .contact-title {
-  font-family: "Roboto Condensed", sans-serif;
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-}
 .contact .contact-text {
   font-family: "Roboto Condensed", sans-serif;
   color: black;
@@ -251,11 +265,17 @@ header .logo-container {
 }
 .contact .instagram-image, .contact .facebook-image, .contact .twitter-image {
   width: 35px;
-  margin-left: 35px;
+  margin-right: 5px;
+  margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
   justify-content: flex-start;
   align-items: flex-start;
+}
+.contact .email-image, .contact .phone-image {
+  width: 35px;
+  margin-right: 5px;
+  margin-left: 0px;
 }
 
 .copyright {
@@ -265,6 +285,10 @@ header .logo-container {
   font-size: 15px;
   background-color: #a1a1a1;
   margin-bottom: 0;
+}
+
+.disclaimer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

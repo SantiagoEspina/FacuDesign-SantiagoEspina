@@ -5,6 +5,11 @@
         @extend %titulos;
     }
 
+    .carrusel-portafolio {
+        display:flex;
+        justify-content: center;
+    }
+
 /* Texto Carrusel */
 
     .porta-carrusel-title1, .porta-carrusel-title2, .porta-carrusel-title3 {
@@ -29,5 +34,7 @@
     border-radius: 20px;
     margin-bottom: 10px;
     }
+
+    
 
 }

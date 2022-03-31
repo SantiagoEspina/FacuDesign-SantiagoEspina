@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: center;
     position: fixed;
-    width: 80%;
+    width: 100%;
     z-index: 1;
     border-bottom: 2px solid #949494;
 
@@ -31,6 +31,20 @@ header {
             }
         }
     }
+
+    .contact-button {
+        background-color: #89DEA9;
+        border: 5px solid #89DEA9;
+        border-radius: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 10px;
+    }
+
+    .contact-button:hover {
+        transform: scale(1.1);
+        transition: ease-in-out 0.2s;
+      }
 
     .logo {
         width: 100px;

@@ -1,8 +1,7 @@
 .inicio {
 
-    img {
-        width: 500px;
-        display: inline;
+    .Carrusel1, .Carrusel2, .Carrusel3 {
+        width: 100%;
         margin-top: 75px;
 
         @media screen and (max-width: 510px) {
@@ -13,16 +12,19 @@
     div {
         .title{
             font-family: 'Roboto Condensed', sans-serif;
+            color: #ffffff;
+            text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
             font-size: 30px;
+            font-weight: bold;
             display: inline;
             position: absolute;
-            top: 350px;
-            left: 30px
+            top: 50%;
+            left: 85px;
         }
 
         .contact-button {
             font-family: 'Roboto Condensed', sans-serif;
-            color: black;
+            color: rgb(0, 0, 0);
             text-decoration: none;
             font-size: 30px;
             font-weight: bold;
@@ -30,13 +32,19 @@
             border: 5px solid #89DEA9;
             border-radius: 13px;
             position: absolute;
-            top: 425px;
-            left: 30px
+            top: 60%;
+            left: 85px;
         }
         
         .contact-button:hover{ 
             transform: scale(1.1);
             transition: ease-in-out 0.2s;
         }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .inicio {
+       display: none;    
     }
 }
